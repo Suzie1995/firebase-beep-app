@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Beep</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+  <header class="header-container">
+    <div class="title left"><i class="material-icons" onclick="goBack()">keyboard_arrow_left</i></div>
+      <script>
+          function goBack() {
+              window.history.back();
+          }
+      </script>
+    <div class="title center">Sign up using Email</div>
+  </header>
+
+  <body>
+    <!-- <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyA47PFbXllb4teaat_10j6FnVOKzK8SWB4",
+            authDomain: "beep-app-1484774811866.firebaseapp.com",
+            databaseURL: "https://beep-app-1484774811866.firebaseio.com",
+            storageBucket: "beep-app-1484774811866.appspot.com",
+            // messagingSenderId: "946101429046"
+          };
+          firebase.initializeApp(config);
+    </script>
+    <script src="js/main.js"></script> -->
+
+    <div class="container" id="getstarted">
+        <div class="register-input">
+            <input id="txtEmail" type="email" name="txtEmail" placeholder="Your email address" required><br>
+            <input id="txtName" type="name" name="txtName" placeholder="Your Name" required><br>
+            <input id="txtPassword" type="password" name="txtPassword" placeholder="Create a password" required><br>
+        </div>
+        <button id="btnSignUp" class="button-1">Sign Up</button>
+    </div>
+    <script src="js/webAuth.js"></script>
+  </body>
+</html>

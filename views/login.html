@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Beep- Login</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
+    <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+  <header class="header-container">
+    <div class="title left">
+      <i class="material-icons" onclick="goBack()">keyboard_arrow_left</i>
+    </div>
+    <script>
+          function goBack() {
+              window.history.back();
+          }
+    </script>
+    <div class="title center">Login</div>
+  </header>
+
+  <body>
+    <div class="container" id="getstarted">
+        <div class="register-input">
+            <input id="txtEmail" type="email" placeholder="What's your email address?" required><br>
+            <input id="txtPassword" type="password" placeholder="and your password?" required>
+        </div>
+        <a href="planned-journey.html"><button id="btnLogin" class="button-1">Login</button></a>
+    </div>
+
+    <script src="js/webAuth.js"></script>
+  </body>
+</html>

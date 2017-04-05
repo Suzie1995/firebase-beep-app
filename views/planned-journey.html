@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Beep- Planned Journey</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+    <script>
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+        // document.getElementById("main").style.marginLeft = "300px";
+    }
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("plannedJourney").style.marginLeft = "0";
+    }
+    </script>
+  </head>
+
+  <header class="header-container">
+    <div class="title left"><i class="material-icons">notifications_none</i></div>
+    <div class="title center"><img class="headerlogo" src="img/logo-2.png"/></div>
+    <div class="title right" id="menuHome"><i class="material-icons" onclick="openNav()">dehaze</i></div>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="journeys.html"><i class="material-icons" id="menuIcons">favorite</i>Planned Journeys</a>
+      <a href="#"><i class="material-icons" id="menuIcons">home</i>Home Address</a>
+      <a href="#"><i class="material-icons" id="menuIcons">work</i>Work Address</a>
+      <a href="#"><i class="material-icons" id="menuIcons">settings</i>Settings</a>
+      <a href="#"><i class="material-icons" id="menuIcons">exit_to_app</i>Logout</a>
+    </div>
+  </header>
+
+  <body>
+    <div class="container" id="plannedJourney">
+      <div class="timeGreeting">
+        <script type="text/javascript">
+            var d = new Date();
+            var time = d.getHours();
+
+            if (time < 12)
+              {
+              document.write("Good Morning!");
+              }
+            if (time > 12)
+              {
+              document.write("Good Afternoon!");
+              }
+        </script>
+      </div>
+          <p>You don't have any journeys planned.
+          <!-- <p><b>'Tap'</b> below to get started.</p>-->
+          <br><br><button class="button-1"><a class="button-font" href="plan.html">Plan a Journey</a></button>
+      </div>
+      <script src="js/webAuth.js"></script>
+  </body>
+</html>

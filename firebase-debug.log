@@ -1,0 +1,14 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] CLI Version:  3.5.0
+[debug] Platform:     darwin
+[debug] Node Version: v6.10.1
+[debug] Time:         Wed Apr 05 2017 15:17:24 GMT+0100 (BST)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: /Users/SuzieGurung/firebase-beep
+[info] Public Directory: views
+[info] 
+[info] Server listening at: http://localhost:5000

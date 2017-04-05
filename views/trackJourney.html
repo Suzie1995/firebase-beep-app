@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Beeep</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+    <script>
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+        // document.getElementById("main").style.marginLeft = "300px";
+    }
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("plannedJourney").style.marginLeft = "0";
+    }
+    </script>
+  </head>
+
+  <header class="header-container">
+    <div class="title left"><i class="material-icons"><a href="plan-2.html">keyboard_arrow_left</a></i></div>
+    <div class="title center">Track</div>
+  </header>
+
+  <body>
+    <div class="tab">
+      <a href="driverTrack.html"><button class="tablinks">Driver</button></a>
+      <a href="passengerTrack.html"><button class="tablinks">Passenger</button></a>
+    </div>
+      <script src="js/loadMap.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD0QqOTpvkybMTag7VzEpkvwCCzP8Uh5c&libraries=places&callback=initMap" async defer></script>
+  </body>
+</html>
