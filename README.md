@@ -27,3 +27,25 @@ Step 1: Open Google Chrome
 Step 2: Right click and select ‘Inspect’
 Step 3: Select ‘Toggle Device Toolbar’ 
 Step: Click on dropdown and select ‘iPhone 6’
+
+-- Code References
+Place search autocomplete
+https://developers.google.com/maps/documentation/javascript/places#place_searches
+
+Adding marker on google map 
+https://developers.google.com/maps/documentation/javascript/adding-a-google-map
+
+Geolocation
+https://developers.google.com/maps/documentation/javascript/examples/map-geolocation
+
+Distance Matrix
+https://developers.google.com/maps/documentation/distance-matrix/start
+
+Firebase Web Authentication
+https://www.youtube.com/watch?v=-OKrloDzGpU
+
+Firebase Real Time Database
+https://www.youtube.com/watch?v=noB98K6A0TY&t=17s
+
+Slide Nav
+https://www.w3schools.com/howto/howto_js_sidenav.asp
